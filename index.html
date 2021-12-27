@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kino på månen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <div class="header">
-      Title Logo Placeholder
-      <nav class="headerNav">
-        <ul class="headerNavMenu">
-          <li><a href="#">Filmer</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Biljetter</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kino på månen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="header">header</div>
+  <div class="hero">hero</div>
+  <div class="about">about</div>
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="hero">hero</div>
-    <div class="about">about</div>
-    <div class="comingSoon">
-      <h2>Kommande filmer</h2>
-      <div class="comingSoonImg">
-        <img src="src/img/banner/banner-6.jpg" alt="" />
-      </div>
-      <div class="comingSoonText">
-        <a href="#">Alla kommande</a>
-      </div>
-    </div>
-    <div class="movieCards">movieCards</div>
-    <div class="ftMovies">ftMovies</div>
-    <div class="events">
-      <div class="eventsHeaderContainer">
-        <h2 class="eventsHeader">KOMMANDE EVENTS</h2>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor.
+    <div class="carousel-inner">
+      <h1>Coming soon movies</h1>
+      <div class="carousel-item active">
+        <img src="src/img/covers/cover6.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Clown: My baloon</h5>
+          <p>Coming 2022</p>
         </div>
       </div>
-      <div class="eventsContainer"></div>
-    </div>
-    <div class="footer">
-      <div class="footerLinks">
-        <a href="linkAbout">OM OSS</a>
-        <a href="linkContact">KONTAKT</a>
-        <a href="linkMovies">FILMER</a>
-        <a href="linkEvent">EVENT</a>
+      <div class="carousel-item">
+        <img src="src/img/covers/cover8.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Spiderman 4</h5>
+          <p>Coming 2022</p>
+        </div>
       </div>
-      <p class="adress">Kino på mars, Marsgatan 1337 ,42 121 31 MUSK HQ</p>
-      <ul class="socialMedia">
-        <li class="fab fa-instagram"></li>
-        <li class="fab fa-facebook"></li>
-        <li class="fab fa-twitter-square"></li>
-        <li class="fab fa-youtube"></li>
-      </ul>
+      <div class="carousel-item">
+        <img src="src/img/covers/cover9.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batman: The Last Hero</h5>
+          <p>Coming 2022</p>
+        </div>
+      </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/07a95dbd5e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="script.js"></script>
-  </body>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="movieCards">movieCards</div>
+  <div class="ftMovies">ftMovies</div>
+  <div class="events">
+    <div class="eventsHeaderContainer">
+      <h2 class="eventsHeader">KOMMANDE EVENTS</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor.
+      </div>
+    </div>
+    <div class="eventsContainer"></div>
+  </div>
+  <div class="footer">
+    <div class="footerLinks">
+      <a href="linkAbout">OM OSS</a>
+      <a href="linkContact">KONTAKT</a>
+      <a href="linkMovies">FILMER</a>
+      <a href="linkEvent">EVENT</a>
+    </div>
+    <p class="adress">Kino på mars, Marsgatan 1337 ,42 121 31 MUSK HQ</p>
+    <ul class="socialMedia">
+      <li class="fab fa-instagram"></li>
+      <li class="fab fa-facebook"></li>
+      <li class="fab fa-twitter-square"></li>
+      <li class="fab fa-youtube"></li>
+    </ul>
+  </div>
+
+  <script src="https://kit.fontawesome.com/07a95dbd5e.js" crossorigin="anonymous"></script>
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
