@@ -45,6 +45,10 @@ img {
 
 .header {
   color: #fafafa;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
 }
 .header a {
   color: #fafafa;

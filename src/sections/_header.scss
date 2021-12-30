@@ -1,5 +1,11 @@
 .header {
     color: $c-white;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+
   a {
     @include menu-link;
     font-weight: bold;
