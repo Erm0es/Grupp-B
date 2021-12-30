@@ -1,5 +1,11 @@
 .header {
-  
+    color: $c-white;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+
   a {
     @include menu-link;
     font-weight: bold;
@@ -16,12 +22,15 @@
       text-align: center;
       align-self: center;
       padding-left: 1.2rem;
-      padding-right: 4rem;
+    }
+
+    .headerNav {
+      width: 100%;
     }
 
     .headerNavMenu {
       display: flex;
-      justify-content:flex-end;
+      justify-content:center;
     }
   }
 }
