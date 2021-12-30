@@ -1,5 +1,5 @@
 .header {
-  
+    color: $c-white;
   a {
     @include menu-link;
     font-weight: bold;
@@ -16,12 +16,15 @@
       text-align: center;
       align-self: center;
       padding-left: 1.2rem;
-      padding-right: 4rem;
+    }
+
+    .headerNav {
+      width: 100%;
     }
 
     .headerNavMenu {
       display: flex;
-      justify-content:flex-end;
+      justify-content:center;
     }
   }
 }
