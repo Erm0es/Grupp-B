@@ -13,31 +13,36 @@ img {
 }
 
 .footer {
-  margin-top: 100px;
+  background-color: #100f0f;
 }
 .footer .footerLinks {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
 .footer .footerLinks a {
+  color: white;
   margin: 0px 10px;
 }
 .footer a:hover {
-  color: #2006b3;
+  color: #5a1bad;
 }
 .footer .adress {
   display: flex;
   justify-content: center;
+  color: white;
   margin-top: 30px;
 }
 .footer .socialMedia {
   display: flex;
   justify-content: center;
+  color: white;
   margin-top: 30px;
 }
 .footer .socialMedia li {
   font-size: 30px;
   margin: 0px 20px;
+  margin-bottom: 100px;
 }
 .footer .socialMedia li:hover {
   font-size: 32px;

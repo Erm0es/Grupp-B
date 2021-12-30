@@ -1,27 +1,32 @@
 .footer {
-  margin-top: 100px;
+  background-color: $c-black;
   .footerLinks {
+    padding-top:100px;
     display: flex;
     justify-content: center;
     a {
+      color: white;
       margin: 0px 10px;
     }
   }
   a:hover{
-      color: rgb(32, 6, 179);
+      color: rgb(90, 27, 173);
   }
   .adress {
     display: flex;
     justify-content: center;
+    color:white;
     margin-top: 30px;
   }
   .socialMedia {
     display: flex;
     justify-content: center;
+    color:white;
     margin-top: 30px;
     li {
       font-size: 30px;
       margin: 0px 20px;
+      margin-bottom:100px;
     }
     li:hover{
         font-size: 32px;
